@@ -48,7 +48,9 @@ public class PlayerController : MonoBehaviour
     {
         if (rb.velocity.y == 0f)//prevents player from jumping while in the air
         {
+            
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);//puts an upward force on the player to make them jump
+            rb.AddForce(Vector3.up*0);
         }
 
     }
