@@ -1,45 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject gameMan;
-    [SerializeField]
-    public GameObject [] platformPrefab;
-    public int numberOfPlatforms = 10;
-    public float minY = 0f;
-    public float maxY = 10f;
-    public float minX = -10f;
-    public float maxX = 10f;
-    
-    // Start is called before the first frame update
-
+    public GameObject objectToInstantiate;
+    public float spawnInterval = 5f;
 
     void Start()
     {
-        SpawnPlatforms();
+        InvokeRepeating("SpawnObject", 0f, spawnInterval);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnObject()
     {
-        //if (gameMan.GetComponent<ScoreManager>().currentScore > 5)
-        //{
+        Camera mainCamera = Camera.main;
+        Vector3 cameraPosition = mainCamera.transform.position;
+        float cameraHeight = 2f * mainCamera.orthographicSize;
 
-        //}
+        float randomY = Random.Range(cameraPosition.y - cameraHeight / 2, cameraPosition.y + cameraHeight / 2);
+        Vector3 spawnPosition = new Vector3(10, randomY, 0);
+
+        Instantiate(objectToInstantiate, spawnPosition, Quaternion.identity);
     }
 
-    void SpawnPlatforms()
-    {
-        float yPosition = minY;
 
-
-        for (int i = 0; i < numberOfPlatforms; i++)
-        {
-            Vector3 spawnPosition = new Vector3(Random.Range(minX, maxX), yPosition, 0);
-            Instantiate(platformPrefab[Random.Range(0, platformPrefab.Length)], spawnPosition, Quaternion.identity);
-            yPosition += 2f;
-        }
-    }
 }
