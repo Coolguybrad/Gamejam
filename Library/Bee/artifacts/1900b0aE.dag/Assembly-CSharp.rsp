@@ -350,6 +350,7 @@
 "Assets/Scripts/Collision.cs"
 "Assets/Scripts/EnemyMovement.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/pickUpVisual.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ScoreManager.cs"
 "Assets/Scripts/UIInteract.cs"

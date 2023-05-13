@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 785246710219762109}
   - component: {fileID: 3242933615895616887}
   - component: {fileID: 785246710219762108}
+  - component: {fileID: -827975110947718}
   m_Layer: 0
   m_Name: waterDrop
   m_TagString: Pickup
@@ -98,3 +99,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: aec87a187a6296946bdfd23aa6cba514, type: 3}
+--- !u!114 &-827975110947718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3891614209146764450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641d4c1206e89bd41b8567b22d007f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 100
+  bobSpeed: 5
+  bobHeight: 0.05
