@@ -5,22 +5,28 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     private Rigidbody rb;
-
+    public GameObject player;
+    public GameObject seed;
+    public GameObject bird;
 
     public float jumpHeight = 20;
     public float speed = 5;
+    public float flyHeight = 10;
 
     void Start()
     {
 
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-
+        if (bird.activeInHierarchy == true)
+        {
+            Fly();
+        }
 
 
 
@@ -31,16 +37,21 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Jump();
+        if (seed.activeInHierarchy == true)
+        {
+            Jump();
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb.AddForce(Vector3.left * speed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.A))
+            {
+                rb.AddForce(Vector3.left * speed * Time.deltaTime);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                rb.AddForce(Vector3.right * speed * Time.deltaTime);
+            }
         }
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb.AddForce(Vector3.right * speed * Time.deltaTime);
-        }
+        
+
 
     }
 
@@ -58,6 +69,15 @@ public class PlayerController : MonoBehaviour
 
         }
 
+    }
+
+    private void Fly() 
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.velocity = Vector2.up * flyHeight;
+        }
+        
     }
 
 
