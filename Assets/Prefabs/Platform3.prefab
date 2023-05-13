@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1133264768975198887}
   - component: {fileID: 6140257540135634308}
   - component: {fileID: 3369344234793917783}
-  - component: {fileID: -3216446593020799987}
+  - component: {fileID: -2443369103289330690}
   m_Layer: 0
   m_Name: Platform3
   m_TagString: Untagged
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &-3216446593020799987
+--- !u!114 &-2443369103289330690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,3 +128,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  self: {fileID: 1493741786618985330}
