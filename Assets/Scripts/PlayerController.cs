@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Rigidbody rb;
 
-
     public float jumpHeight = 20;
     public float speed = 5;
 
