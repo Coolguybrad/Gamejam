@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Collision : MonoBehaviour
 {
@@ -17,12 +18,15 @@ public class Collision : MonoBehaviour
     // Start is called before the first frame update
     public GameObject gameMan;
 
+    public UnityEvent onPickUp = new UnityEvent();
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Pickup") //if the player collides into a pickup
         {
 
             gameMan.GetComponent<ScoreManager>().currentScore++;
+            onPickUp.Invoke();
             Destroy(other.gameObject); //destroys the pickup object
 
         }

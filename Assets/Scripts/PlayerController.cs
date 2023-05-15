@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 20;
     public float speed = 5;
     public float flyHeight = 10;
+
+    public UnityEvent onJump = new UnityEvent();
 
     void Start()
     {
@@ -66,8 +69,11 @@ public class PlayerController : MonoBehaviour
         {
 
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);//puts an upward force on the player to make them jump
+            onJump.Invoke();
 
         }
+
+        
 
     }
 

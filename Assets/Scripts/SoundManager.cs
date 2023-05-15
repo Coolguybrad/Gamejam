@@ -10,6 +10,8 @@ public class SoundManager : MonoBehaviour
     private AudioSource button;
     [SerializeField]
     private AudioSource jump;
+    [SerializeField]
+    private AudioSource drop;
 
     private static SoundManager instance;
 
@@ -63,5 +65,9 @@ public class SoundManager : MonoBehaviour
     public void playJumpSFX() 
     {
         jump.Play();
+    }
+    public void playDropSFX()
+    {
+        drop.Play();
     }
 }
