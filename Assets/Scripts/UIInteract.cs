@@ -25,4 +25,9 @@ public class UIInteract : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(1); // reloads demo level
     }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

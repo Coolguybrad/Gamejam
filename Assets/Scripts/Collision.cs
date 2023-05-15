@@ -8,6 +8,9 @@ public class Collision : MonoBehaviour
     public GameObject seedEnd;
     public GameObject flowerEnd;
     public GameObject treeEnd;
+    public GameObject seedEndCanvas;
+    public GameObject flowerEndCanvas;
+    public GameObject treeEndCanvas;
 
     public GameObject cam;
 
@@ -28,15 +31,18 @@ public class Collision : MonoBehaviour
         {
             if(gameMan.GetComponent<ScoreManager>().currentScore<5)
             {
-                seedEnd.SetActive(true);                
+                seedEnd.SetActive(true);
+                seedEndCanvas.SetActive(true);
             }
             else if(gameMan.GetComponent<ScoreManager>().currentScore < 10)
             {
                 flowerEnd.SetActive(true);
+                flowerEndCanvas.SetActive(true );
             }
             else
             {
                 treeEnd.SetActive(true) ;
+                treeEndCanvas.SetActive(true);
             }
 
             other.gameObject.SetActive(false);
