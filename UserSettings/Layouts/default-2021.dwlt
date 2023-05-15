@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 61
+  controlID: 71
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 102
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 54
+  controlID: 100
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 60
+  controlID: 101
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,22 +367,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\University\2023\Semester 1\gads\Gamejam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b25d0000
-    m_LastClickedID: 23986
-    m_ExpandedIDs: 000000003e5d0000405d000000ca9a3b
+    m_SelectedIDs: b05d0000
+    m_LastClickedID: 23984
+    m_ExpandedIDs: 00000000405d0000425d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -410,7 +410,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003e5d0000405d0000
+    m_ExpandedIDs: 00000000405d0000425d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -537,24 +537,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1837}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: baf5ffff9afaffff36fbffff125800001a5800002c5800005c5800006858000070580000745800008a5800009a580000a4580000d2580000f6580000fe58000026590000365900003c59000040590000585900006e5900007e5900008e590000ae590000ba590000be590000c4590000c8590000d8590000e8590000085a00001e5a0000985a0000a05a0000de5a0000145b00001a5b0000425b0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 16690000
+      m_LastClickedID: 26902
+      m_ExpandedIDs: 766efffffe79fffff6acffffe8baffffc6c3ffff94c9ffff32cbfffff6ccffffbccdffffbedcffff3cedffff14eeffff42efffff36fbffffc0620000d2620000d6620000de620000e6620000026300001e630000b8680000ca680000ce680000d6680000fa68000016690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Directional Light
-        m_OriginalName: Directional Light
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 23278
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -822,9 +822,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.6752152, y: 115.462074, z: 12.304419}
+    m_Target: {x: 355.49527, y: 214.48663, z: 27.72699}
     speed: 2
-    m_Value: {x: -6.6752152, y: 115.462074, z: 12.304419}
+    m_Value: {x: 355.49527, y: 214.48663, z: 27.72699}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -875,9 +875,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.025806753, y: 0.0014940057, z: -0.000045975634, w: 0.99966586}
   m_Size:
-    m_Target: 22.856472
+    m_Target: 296.763
     speed: 2
-    m_Value: 21.872223
+    m_Value: 296.763
   m_Ortho:
     m_Target: 1
     speed: 2
