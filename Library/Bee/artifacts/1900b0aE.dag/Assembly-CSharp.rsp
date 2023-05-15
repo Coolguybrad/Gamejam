@@ -354,6 +354,7 @@
 "Assets/Scripts/MoveBetweenTwoPoints.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ScoreManager.cs"
+"Assets/Scripts/SoundManager.cs"
 "Assets/Scripts/UIInteract.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
