@@ -350,6 +350,7 @@
 "Assets/Scripts/CreateRandom.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/LevelManager.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MoveBetweenTwoPoints.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ScoreManager.cs"
